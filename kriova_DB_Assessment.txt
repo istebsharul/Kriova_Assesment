@@ -1,0 +1,26 @@
+//Creating database named Kriova
+create database kriova;
+
+//Changing database to kriova to use
+use kriova;
+
+//Creating Table Employee
+CREATE TABLE Employee(EmployeeId int NOT NULL,EmployeeName varchar(100) NOT NULL, DateOfBirth DATE NOT NULL, Email varchar(50)NOT NULL, PhoneNumber BIGINT NOT NULL, Street Text NOT NULL, City TEXT NOT NULL, State Text NOT NULL, Country Text NOT NULL, Pincode INT NOT NULL); 
+
+//Making EmployeeId as a Primary key
+ALTER TABLE Employee ADD PRIMARY KEY (EmployeeID);
+
+//Making Unique email and phone Number to prevent false input
+ALTER TABLE Employee ADD UNIQUE(Email, PhoneNumber);
+
+//Insering Data into Table Employee
+INSERT INTO Employee VALUES(1,"A",'2000-03-27',"a@gmail.com",0000000001,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(2,"B",'2000-03-27',"b@gmail.com",0000000002,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(3,"C",'2000-03-27',"c@gmail.com",0000000003,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(4,"D",'2000-03-27',"d@gmail.com",0000000004,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(5,"E",'2000-03-27',"e@gmail.com",0000000005,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(6,"F",'2000-03-27',"f@gmail.com",0000000006,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(7,"G",'2000-03-27',"g@gmail.com",0000000007,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(8,"H",'2000-03-27',"h@gmail.com",0000000008,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(9,"I",'2000-03-27',"i@gmail.com",0000000009,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
+INSERT INTO Employee VALUES(10,"J",'2000-03-27',"j@gmail.com",0000000010,"k.c. Sen Street","Kolkata","WestBengal","India",700058);
